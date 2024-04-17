@@ -16,7 +16,7 @@ function toggleItem(btn, itemId, price) {
         btn.innerText = "Eliminar del carrito";
         let totalPrice = items.reduce((total, item) => total + item.price, 0);
         if (totalPrice > 0) {
-            tg.MainButton.setText(`Precio total: ${totalPrice}`);
+            tg.MainButton.setText(`Total a pagar: ${totalPrice}`);
             if (!tg.MainButton.isVisible) {
                 tg.MainButton.show();
             }
@@ -30,7 +30,7 @@ function toggleItem(btn, itemId, price) {
         btn.innerText = "Agregar al carrito";
         let totalPrice = items.reduce((total, item) => total + item.price, 0);
         if (totalPrice > 0) {
-            tg.MainButton.setText(`Precio total: ${totalPrice}`);
+            tg.MainButton.setText(`Total a pagar: ${totalPrice}`);
             if (!tg.MainButton.isVisible) {
                 tg.MainButton.show();
             }
